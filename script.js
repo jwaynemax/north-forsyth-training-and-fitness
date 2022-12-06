@@ -1,5 +1,5 @@
 /**
- * Example starter JavaScript for disabling form submissions if 
+ * JavaScript for disabling form submissions if 
  * there are invalid fields  
  */
 (function () {
@@ -19,3 +19,16 @@
         });
     }, false);
 })();
+
+/**
+ * JavaScript for toast
+ */
+const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+if (toastTrigger) {
+  toastTrigger.addEventListener('click', () => {
+    const toast = new bootstrap.Toast(toastLiveExample)
+
+    toast.show()
+  })
+}
