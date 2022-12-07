@@ -20,15 +20,24 @@
     }, false);
 })();
 
-/**
- * JavaScript for toast
- */
-const toastTrigger = document.getElementById('liveToastBtn')
-const toastLiveExample = document.getElementById('liveToast')
-if (toastTrigger) {
-  toastTrigger.addEventListener('click', () => {
-    const toast = new bootstrap.Toast(toastLiveExample)
 
-    toast.show()
-  })
+/**
+ * Workout of the day
+ */      
+document.getElementById("strength").addEventListener("click", strength);
+document.getElementById("workout").addEventListener("click", workout);
+
+
+function strength() {
+    document.getElementById("todayWOD").classList.add('display-none');
+    document.getElementById("todayStrength").classList.remove('display-none');
+    document.getElementById("strength").classList.add('active');
+    document.getElementById("workout").classList.remove('active');
+}
+
+function workout() {
+    document.getElementById("todayWOD").classList.remove('display-none');
+    document.getElementById("todayStrength").classList.add('display-none');
+    document.getElementById("strength").classList.remove('active');
+    document.getElementById("workout").classList.add('active');
 }

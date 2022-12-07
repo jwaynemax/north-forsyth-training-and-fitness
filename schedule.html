@@ -2,76 +2,280 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap core CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  <title>North Forsyth Training & Fitness</title>
-  <link rel="icon" href="images/logo.gif">
+    <title>North Forsyth Training & Fitness</title>
+    <link rel="icon" href="images/logo.gif">
 
-  <!-- Custom styles for this template -->
-  <link href="style.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">North Forsyth Training & Fitness</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="coaches.html">Coaches</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="schedule.html">Schedule</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pricing.html">Pricing</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">North Forsyth Training & Fitness</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="workout.html">WOD</a>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="coaches.html">Coaches</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="schedule.html">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <main>
+    <main>
 
-    <!-- Marketing messaging and featurettes
+        <!-- Marketing messaging and featurettes
   ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
+        <div class="container marketing">
+            <div id="scheduleTable">
+                <p><span class="important">*</span>Class times are subject to change based on weather and holidays.</p>
+                <h1 class="display-4 fw-normal">Monday</h1>
+                <table class="table table-dark table-striped">
+                    <tr>
+                        <td>Time</td>
+                        <td>Class Type</td>
+                    </tr>
+                    <tr>
+                        <td>5:30 AM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>6:30 AM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>7:30 AM</td>
+                        <td>Open Gym</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 AM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>3:30 PM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>4:30 PM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>5:30 PM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>6:30 AM</td>
+                        <td>Open Gym</td>
+                    </tr>
+                </table>
+                <h1 class="display-4 fw-normal">Tuesday</h1>
+                <table class="table table-dark table-striped">
+                    <tr>
+                        <td>Time</td>
+                        <td>Class Type</td>
+                    </tr>
+                    <tr>
+                        <td>5:30 AM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>6:30 AM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>7:30 AM</td>
+                        <td>Open Gym</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 AM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>3:30 PM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>4:30 PM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>5:30 PM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>6:30 AM</td>
+                        <td>Open Gym</td>
+                    </tr>
+                </table>
+                <h1 class="display-4 fw-normal">Wednesday</h1>
+                <table class="table table-dark table-striped">
+                    <tr>
+                        <td>Time</td>
+                        <td>Class Type</td>
+                    </tr>
+                    <tr>
+                        <td>5:30 AM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>6:30 AM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>7:30 AM</td>
+                        <td>Open Gym</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 AM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 PM</td>
+                        <td>Open Gym</td>
+                    </tr>
+                    <tr>
+                        <td>3:30 PM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>4:30 PM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>5:30 PM</td>
+                        <td>Group</td>
+                    </tr>
+                </table>
+                <h1 class="display-4 fw-normal">Thursday</h1>
+                <table class="table table-dark table-striped">
+                    <tr>
+                        <td>Time</td>
+                        <td>Class Type</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 AM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 PM</td>
+                        <td>Open Gym</td>
+                    </tr>
+                    <tr>
+                        <td>3:30 PM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>4:30 PM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>5:30 PM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>5:30 PM</td>
+                        <td>Open Gym</td>
+                    </tr>
+                </table>
+                <h1 class="display-4 fw-normal">Friday</h1>
+                <table class="table table-dark table-striped">
+                    <tr>
+                        <td>Time</td>
+                        <td>Class Type</td>
+                    </tr>
+                    <tr>
+                        <td>5:30 AM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>6:30 AM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>7:30 AM</td>
+                        <td>Open Gym</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 AM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>3:30 PM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>4:30 PM</td>
+                        <td>Group</td>
+                    </tr>
+                    <tr>
+                        <td>5:30 PM</td>
+                        <td>Group</td>
+                    </tr>
+                </table>
+                <h1 class="display-4 fw-normal">Saturday</h1>
+                <table class="table table-dark table-striped">
+                    <tr>
+                        <td>Time</td>
+                        <td>Class Type</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 AM</td>
+                        <td>Group</td>
+                    </tr>
+                </table>
+                <h1 class="display-4 fw-normal">Sunday</h1>
+                <table class="table table-dark table-striped">
+                    <tr>
+                        <td>Gym Closed</td>
+                    </tr>
+                </table>
+            </div>
+            <hr class="featurette-divider">
 
-      
-      <hr class="featurette-divider">
+            <!-- /END THE FEATURETTES -->
+        </div><!-- /.container -->
+    </main>
 
-      <!-- /END THE FEATURETTES -->
-    </div><!-- /.container -->
-  </main>
+    <!-- FOOTER -->
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <span class="text-muted">Copyright &copy; 2022 North Forysth Training & Fitness<br></span>
+        <a href="mailto:jmaxwell00724@my.westga.edu">nftf@example.com</a>
+    </footer>
 
-  <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-end"><a href="#">Back to top</a></p>
-    <span class="text-muted">Copyright &copy; 2022 North Forysth Training & Fitness<br></span>
-    <a href="mailto:jmaxwell00724@my.westga.edu">nftf@example.com</a>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
 </body>
 

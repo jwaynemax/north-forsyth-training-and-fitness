@@ -99,6 +99,32 @@ strong {
 /* Three Column layout */
 #coachesColumn {
   margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+#scheduleTable {
+  margin-top: 80px;
+}
+
+.important {
+  color: red;
+}
+
+#workoutPage {
+  margin-top: 80px;
+}
+
+#todayStrength {
+  margin-top: 10px;
+}
+
+#todayWOD {
+  margin-top: 10px;
+}
+
+.display-none {
+  display: none;
 }
 
 /* RESPONSIVE CSS

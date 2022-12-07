@@ -33,6 +33,9 @@
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="workout.html">WOD</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="coaches.html">Coaches</a>
             </li>
             <li class="nav-item">
@@ -141,7 +144,7 @@
         <div id="signup" class="row featurette">
           <h2 class="featurette-heading">Interested in joining? Have questions? <br>Fill out this form.</h2>
           <p class="lead">
-          <form method="post" action="https://webdevbasics.net/scripts/pacific.php" class="needs-validation" novalidate>
+          <form method="post" class="needs-validation" novalidate>
             <div class="form-group">
               <div class="mb-3">
                 <label for="fnameField"> * First Name: </label><input type="text" class="form-control" id="fnameField"
@@ -175,19 +178,7 @@
                     name="commentsField" rows="2" cols="20"></textarea>
                 </div>
               </div>
-              <input class="btn btn-primary" type="submit" id="liveToastBtn" value="Submit">
-
-              <div class="toast-container position-fixed bottom-0 end-0 p-3">
-                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                  <div class="toast-header">
-                    <strong class="me-auto">Thank you!</strong>
-                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                  </div>
-                  <div class="toast-body">
-                    Form submitted successfully. We'll reach out to you shortly.
-                  </div>
-                </div>
-              </div>
+              <input class="btn btn-primary" type="submit" value="Submit">
             </div>
           </form>
         </div>
