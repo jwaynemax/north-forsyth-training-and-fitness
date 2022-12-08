@@ -12,6 +12,6 @@
     -coaches.html
     -Lines 59-97
 
-4. Toaster
+4. Toasts
     -index.html
     -Lines 189-199
