@@ -54,10 +54,9 @@ main>.container {
 
 }
 
-/* MARKETING CONTENT
+/* Main CONTENT
 -------------------------------------------------- */
 
-/* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
@@ -67,13 +66,10 @@ main>.container {
   font-weight: 400;
 }
 
-/* rtl:begin:ignore */
 .marketing .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
 }
-
-/* rtl:end:ignore */
 
 /* Featurettes
 ------------------------- */
@@ -96,7 +92,6 @@ strong {
   font-weight: bold;
 }
 
-/* Three Column layout */
 #coachesColumn {
   margin-top: 80px;
   display: flex;
