@@ -1,4 +1,8 @@
-// Button validation logic
+/**
+ * ----------------------------------------
+ * Button validation logic w/ toaster for index.html
+ * ----------------------------------------
+ */
 
 function validateMyContactForm() {
     (function () {
@@ -7,15 +11,28 @@ function validateMyContactForm() {
         if (!forms[0].checkValidity()) {
             event.preventDefault();
             event.stopPropagation();
+        } else {
+            const toastTrigger = document.getElementById('liveToastBtn')
+            const toastLiveExample = document.getElementById('liveToast')
+            if (toastTrigger) {
+
+                const toast = new bootstrap.Toast(toastLiveExample)
+
+                toast.show()
+            }
         }
 
         forms[0].classList.add('was-validated');
     })
-    ()
+        ()
 }
 
 
-
+/**
+ * ----------------------------------------
+ * Button validation logic for pricing.html
+ * ----------------------------------------
+ */
 function validateMyForm() {
     (function () {
         var forms = document.querySelectorAll('.needs-validation');
@@ -32,14 +49,16 @@ function validateMyForm() {
         }
 
         forms[0].classList.add('was-validated');
-        
+
     })
-    ()
+        ()
 }
 
 
 /**
+ * ----------------------------------------
  * Workout of the day
+ * ----------------------------------------
  */
 document.getElementById("strength").addEventListener("click", strength);
 document.getElementById("workout").addEventListener("click", workout);
@@ -61,7 +80,9 @@ function workout() {
 }
 
 /**
+ * ----------------------------------------
  * Pricing Logic
+ * ----------------------------------------
  */
 
 function populateFormDetails() {
